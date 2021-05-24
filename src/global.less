@@ -1,0 +1,113 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+//底色
+@bgcolor: #f0f2f5;
+
+@fontSize: 14px;
+@title_fontSize: 16px;
+@text_color: #333333;
+@title_color: #333333;
+@other_text_color: #616367;
+@placeholder_color: #c1c1c7;
+@othter_color: #f48421;
+
+@primary_color: #237be9;
+
+.ant-layout-header {
+  background: @primary-color !important;
+}
+.ant-pro-global-header-layout-mix {
+  background: @primary-color !important;
+}
+.ant-pro-top-nav-header {
+  box-shadow: 0 3px 0 0 #ee9800 !important;
+}
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub {
+  background: @primary-color !important;
+}
+.ant-menu-item-selected {
+  background-color: #bae8d7 !important;
+}
+.ant-pro-basicLayout-content {
+  margin: 0px 24px !important;
+}
+
+// 新增模态框标题样式
+.ant-modal-header {
+  background-color: @primary-color;
+}
+.ant-modal-title,
+.ant-modal-close-x {
+  color: #fff;
+}
+
+// table表格样式
+.ant-table-thead {
+  tr {
+    th {
+      background-color: #f6f8fd !important;
+    }
+  }
+}
+
+.ant-table-tbody {
+  tr:nth-child(even) {
+    background-color: #f2f6fa;
+  }
+}
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  background: #e0e9ff;
+}

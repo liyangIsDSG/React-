@@ -1,0 +1,42 @@
+/*
+ * File: index.less
+ * Description: 描述
+ * File Created: 2020-09-24 17:39:04
+ * Author: yangwenwu
+ * ------
+ * Last Modified: 2020-11-17 16:29:04
+ * Modified By: yangwenwu at <1552153802@qq.com>
+ * ------
+ * Copyright 2020 - Present, Your Company
+ */
+.header {
+    padding: 10px 0;
+}
+.TabsNmg {
+    :global {
+        .ant-tabs-nav {
+            padding-left: 20px;
+            background-color: white;
+            margin-bottom: 20px !important;
+            height: 60px;
+            .ant-tabs-tab-active {
+                .ant-tabs-tab-btn {
+                    color: #262626;
+                }
+            }
+        }
+    }
+    .TabsNmg-gray {
+        .ant-tabs-nav {
+            background-color: #eee;
+            .ant-tabs-tab-active {
+                .ant-tabs-tab-btn {
+                    color: #215ff9;
+                }
+            }
+            .ant-tabs-ink-bar .ant-tabs-ink-bar-animated {
+                display: none;
+            }
+        }
+    }
+}
